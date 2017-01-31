@@ -2,7 +2,16 @@ defmodule PeonTest do
   use PowerAssert
   doctest Peon
 
-  test "hello world" do
-    assert Peon.hello() == :world
+  setup do
+    {:ok, registry} = Peon.start_link()
+    {:ok, registry: registry}
+  end
+
+  test "spawns link", %{registry: registry} do
+    assert registry == registry
+  end
+
+  test "sample call", %{registry: registry} do
+    assert GenServer.call(registry, {:test, "test"}) == :ok
   end
 end

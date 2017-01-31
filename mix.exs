@@ -5,7 +5,8 @@ defmodule Peon.Mixfile do
     [
       app: :peon,
       name: "Peon",
-      description: "Easy task/process pooling for on-demand or cron-able tasks.",
+      description: "Easy task/process pooling for on-demand
+                    or cron-able tasks.",
       package: package(),
       version: "0.1.0",
       elixir: "~> 1.4",

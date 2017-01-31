@@ -3,16 +3,21 @@ defmodule Peon do
   Documentation for Peon.
   """
 
-  @doc """
-  Hello world.
+  use GenServer
 
-  ## Examples
+  def start_link do
+    GenServer.start_link(__MODULE__, :ok , [])
+  end
 
-      iex> Peon.hello
-      :world
+  def init(_opts) do
+    {:ok, %{}}
+  end
 
-  """
-  def hello do
-    :world
+  def handle_call(_msg, _from, state) do
+    {:reply, :ok, state}
+  end
+
+  def handle_cast(_msg, state) do
+    {:noreply, state}
   end
 end
