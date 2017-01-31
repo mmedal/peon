@@ -1,8 +1,8 @@
 defmodule PeonTest do
-  use ExUnit.Case
+  use PowerAssert
   doctest Peon
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "hello world" do
+    assert Peon.hello() == :world
   end
 end
