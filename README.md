@@ -1,6 +1,9 @@
 # Peon
 
-**TODO: Add description**
+[![Build Status][build-badge]][build-href]
+[![Coverage Status][coveralls-badge]][coveralls-href]
+
+**Easy task/process pooling; on-demand or cron-able.**
 
 ## Installation
 
@@ -13,7 +16,10 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/peon](https://hexdocs.pm/peon).
+[hex-badge]: http://img.shields.io/hexpm/v/peon.svg
+[hex-href]: https://hex.pm/packages/peon
+[build-badge]: https://travis-ci.org/mmedal/peon.svg?branch=master
+[build-href]: https://travis-ci.org/mmedal/peon
+[coveralls-badge]: https://coveralls.io/repos/mmedal/peon/badge.svg?branch=master
+[coveralls-href]: https://coveralls.io/r/mmedal/peon?branch=master
 
